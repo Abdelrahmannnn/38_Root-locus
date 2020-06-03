@@ -86,12 +86,6 @@ for k in nu.linspace(-20000, 20000000, 600):
   g = symp.Poly(Eqn + k, S)
   All = nu.roots(g.all_coeffs())
   for x in range(len(All)):
-      plt.scatter([All[x].real], [All[x].imag], color="yellow",
-                  marker= "o", s=13)
-
-
-
-
-
-
+      plt.scatter([All[x].real], [All[x].imag], color="yellow", marker= "o", s=13)
+                  
 plt.show()
